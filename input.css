@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HAMBURGER */
+
+.hamburger{
+    position:absolute;
+    right:10px;
+    height:24px;
+    width:24px;
+    transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-color:#000;
+    height:2px;
+    width:24px;
+}
+
+.hamburger-middle{
+    transform:translateY(7px);
+}
+
+.hamburger-bottom{
+    transform:translateY(14px);
+}
+
+.open{
+    transform:rotate(90deg);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translatex(6px);
+}
+
+.open .hamburger-middle{
+    display:none;
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translatex(-6px);
+}
+
+#menu{
+    transition: all 0.2s;
+}
+
+/* ***************************** */
+
+
+
+li:before {
+    content:"·";
+    font-size:80px;
+    vertical-align:middle;
+    line-height:20px;
+    margin-right:10px;
+}

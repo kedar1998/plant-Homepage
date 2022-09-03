@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Plant</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+
+    <section id="navbar">
+
+        <div class="relative container max-w-7xl mx-auto ">
+            
+            <nav class="flex items-center justify-between p-4 font-bold">
+                <div>
+                    <img src="./photos/Logo.svg" alt="">
+                </div>
+                <div class="hidden md:flex space-x-12">
+                    <a href="#">Home</a>
+                    <a href="#">Collection</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <img src="./photos/cart.svg" alt="">
+                    <img src="./photos/user.svg" alt="">
+                    <img src="./photos/search.svg" alt="">
+                </div>
+
+                <!-- HAMBURGER -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="hamburger">
+                        <div class="hamburger-top"></div>
+                        <div class="hamburger-middle"></div>
+                        <div class="hamburger-bottom"></div>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- MENU -->
+            <div id="menu" class="hidden absolute top-15 right-2 left-2 flex flex-col items-center space-y-8 bg-primary rounded-xl py-6 text-white z-50">
+                    <a href="#">Home</a>
+                    <a href="#">Collection</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <div class="flex space-x-8">
+                        <a href="#"><img src="./photos/cart.svg" alt="" class=""></a>
+                        <a href="#"><img src="./photos/user.svg" alt="" class=""></a>
+                        <a href="#"><img src="./photos/search.svg" alt="" class=""></a>
+                    </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MAIN -->
+
+    <section id="main" class="relative">
+
+        <div class="flex flex-col md:flex-row items-center md:px-4 px-2 max-w-7xl mx-auto">
+
+            <!-- LEFT -->
+            <div class="flex flex-col items-center md:items-start space-y-20 max-w-7xl ">
+
+                <ul class=" z-10 md:w-1/2 font-bold md:font-normal">
+                    <li class="text-5xl md:text-6xl">Monstera</li>
+                    <li class=""></li>
+                    <li class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    <li class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</li>
+                </ul>
+                
+                <button class="bg-primary  text-white px-12 rounded-full  py-3  z-10">Discover</button>
+
+                <div class="flex flex-col md:flex-row space-y-10  md:space-y-0 md:space-x-5 z-10 pt-10">
+                    <!-- ITEM - 1 -->
+                    <div class="flex items-start">
+                        <img src="./photos/water plant.png" alt="">
+                        <div class="w-48 h-8 ml-1">
+                            <h1 class="font-bold">Feeding</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM - 2 -->
+                    <div class="flex items-start">
+                        <img src="./photos/light.svg" alt="">
+                        <div class="w-48 h-8 ml-1">
+                            <h1 class="font-bold">Light</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM - 2 -->
+                    <div class="flex items-start">
+                        <img src="./photos/plough.svg" alt="">
+                        <div class="w-48 h-8 ml-1">
+                            <h1 class="font-bold">Care</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <!-- RIGHT -->
+            <div>
+                <img src="./photos/6_folwer_cut.png" alt="" class=" absolute right-0 top-0 h-[400px] md:h-[550px] ">
+            </div>
+        
+        </div>
+    </section>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
